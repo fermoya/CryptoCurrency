@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MarketCollectionViewCell" id="gTV-IL-0wX" customClass="MarketCollectionViewCell" customModule="CryptoCurrencyCore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="55"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NASDAQ BX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDS-8B-saQ">
+                        <rect key="frame" x="10" y="8" width="100" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcX-91-HN7">
+                        <rect key="frame" x="10" y="27.5" width="100" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.45848734263779189" green="1" blue="0.70087323925294209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="NcX-91-HN7" firstAttribute="trailing" secondItem="zDS-8B-saQ" secondAttribute="trailing" id="3FF-HJ-0tc"/>
+                <constraint firstItem="NcX-91-HN7" firstAttribute="leading" secondItem="zDS-8B-saQ" secondAttribute="leading" id="6P9-DC-hty"/>
+                <constraint firstItem="zDS-8B-saQ" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="8" id="HZZ-cn-dx8"/>
+                <constraint firstItem="zDS-8B-saQ" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="10" id="N2S-hK-t6J"/>
+                <constraint firstItem="NcX-91-HN7" firstAttribute="top" secondItem="zDS-8B-saQ" secondAttribute="bottom" constant="5" id="WMR-Lo-b0R"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="zDS-8B-saQ" secondAttribute="trailing" constant="10" id="hbO-9E-z1s"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="nameLabel" destination="zDS-8B-saQ" id="Ptg-Go-uQ8"/>
+                <outlet property="percentageLabel" destination="NcX-91-HN7" id="ai7-sK-LUY"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,99 @@
+PODS:
+  - Action (3.5.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - Alamofire (4.7.2)
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
+  - Differentiator (3.0.2)
+  - Kingfisher (4.8.0)
+  - "NSObject+Rx (4.3.0)":
+    - RxSwift (~> 4.0)
+  - Reachability (3.2)
+  - RxAlamofire (4.2.0):
+    - RxAlamofire/Core (= 4.2.0)
+  - RxAlamofire/Core (4.2.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4)
+  - RxAnimated (0.4.1):
+    - RxAnimated/Core (= 0.4.1)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxAnimated/Core (0.4.1):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxBlocking (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxGesture (1.2.1):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - RxTest (4.2.0):
+    - RxSwift (~> 4.0)
+
+DEPENDENCIES:
+  - Action
+  - ChameleonFramework
+  - Charts
+  - Kingfisher (~> 4.0)
+  - "NSObject+Rx"
+  - Reachability
+  - RxAlamofire
+  - RxAnimated
+  - RxBlocking (~> 4.0)
+  - RxCocoa (~> 4.0)
+  - RxDataSources (~> 3.0)
+  - RxGesture
+  - RxSwift (~> 4.0)
+  - RxTest (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Action
+    - Alamofire
+    - ChameleonFramework
+    - Charts
+    - Differentiator
+    - Kingfisher
+    - "NSObject+Rx"
+    - Reachability
+    - RxAlamofire
+    - RxAnimated
+    - RxBlocking
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxSwift
+    - RxTest
+
+SPEC CHECKSUMS:
+  Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  "NSObject+Rx": 9a5eeff5e08156f849fa973514456f28eef08742
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  RxAlamofire: 87a9c588541210cc3e4a1f843ccc3ecf3eb98b31
+  RxAnimated: 8b3142830a60840ebed5755d33b9c88ad5a1647c
+  RxBlocking: e339d8a6e752e25ade95ff858466c55436668f59
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxGesture: c278eb05b187abd47e11e65464ae4de53ab71d95
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  RxTest: 8da864c0ee47534f586ff18fb0c7e5b2f1fe5023
+
+PODFILE CHECKSUM: bc59641b54a2d0c7636b15047e20ffb741ac77e3
+
+COCOAPODS: 1.5.3

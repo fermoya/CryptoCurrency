@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CryptoCurrenciesViewController" customModule="CryptoCurrencyCore" customModuleProvider="target">
+            <connections>
+                <outlet property="currenciesTableViewContainer" destination="9N3-NE-fKj" id="Xxc-sd-plL"/>
+                <outlet property="searchDisplayController" destination="NWS-Lb-CMl" id="X7h-Jb-iE9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9N3-NE-fKj">
+                    <rect key="frame" x="16" y="20" width="343" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9N3-NE-fKj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="1TT-JY-AT6"/>
+                <constraint firstItem="9N3-NE-fKj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="GNz-R1-pbo"/>
+                <constraint firstItem="9N3-NE-fKj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QoU-2S-RVz"/>
+                <constraint firstItem="9N3-NE-fKj" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="gYG-fm-GlT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+        <searchDisplayController id="NWS-Lb-CMl">
+            <connections>
+                <outlet property="delegate" destination="-1" id="1D1-YS-Su6"/>
+                <outlet property="searchContentsController" destination="-1" id="bP4-6a-eWy"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="S2a-ko-erG"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="0W7-em-Q8P"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>

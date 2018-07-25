@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="CryptoCurrencyCore" customModuleProvider="target">
+            <connections>
+                <outlet property="chartSegmentedControl" destination="Afi-JH-YnZ" id="yns-na-yrP"/>
+                <outlet property="coinIconImageView" destination="GiW-RD-tT9" id="IUo-Jq-XhI"/>
+                <outlet property="coinNameLabel" destination="r1h-SP-naU" id="md4-ou-fQc"/>
+                <outlet property="datePriceLabe" destination="3fV-W6-agh" id="pEM-hv-1A2"/>
+                <outlet property="detailView" destination="NA1-2b-1tP" id="eth-o3-7wf"/>
+                <outlet property="lineChartView" destination="z6v-2Z-mTh" id="MR5-UR-92p"/>
+                <outlet property="priceLabel" destination="ljY-SU-Bda" id="k8j-Bz-TNp"/>
+                <outlet property="timePeriodSegmentedControl" destination="uhU-ef-hRk" id="783-pJ-zc3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GiW-RD-tT9">
+                    <rect key="frame" x="16" y="36" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="UMP-zb-FPh"/>
+                        <constraint firstAttribute="width" secondItem="GiW-RD-tT9" secondAttribute="height" multiplier="1:1" id="sdD-oc-fEK"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1h-SP-naU">
+                    <rect key="frame" x="92" y="56" width="267" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6v-2Z-mTh" customClass="LineChartView" customModule="Charts">
+                    <rect key="frame" x="16" y="112" width="343" height="411"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NA1-2b-1tP" userLabel="Detail">
+                    <rect key="frame" x="328" y="555" width="31" height="0.0"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljY-SU-Bda" userLabel="Price">
+                            <rect key="frame" x="0.0" y="0.0" width="31" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fV-W6-agh" userLabel="Date">
+                            <rect key="frame" x="0.0" y="-14.5" width="31" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3fV-W6-agh" firstAttribute="leading" secondItem="ljY-SU-Bda" secondAttribute="leading" id="1iQ-Tu-FCL"/>
+                        <constraint firstAttribute="trailing" secondItem="ljY-SU-Bda" secondAttribute="trailing" id="R3T-CL-nc4"/>
+                        <constraint firstItem="ljY-SU-Bda" firstAttribute="leading" secondItem="NA1-2b-1tP" secondAttribute="leading" id="Yzp-TX-kw8"/>
+                        <constraint firstItem="ljY-SU-Bda" firstAttribute="top" secondItem="3fV-W6-agh" secondAttribute="bottom" id="dOe-sk-eTU"/>
+                        <constraint firstAttribute="bottom" secondItem="3fV-W6-agh" secondAttribute="bottom" id="fWL-rD-WDd"/>
+                        <constraint firstItem="3fV-W6-agh" firstAttribute="trailing" secondItem="ljY-SU-Bda" secondAttribute="trailing" id="nC2-jZ-hc8"/>
+                        <constraint firstItem="ljY-SU-Bda" firstAttribute="top" secondItem="NA1-2b-1tP" secondAttribute="top" id="oZQ-bh-GHl"/>
+                    </constraints>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uhU-ef-hRk">
+                    <rect key="frame" x="16" y="587" width="343" height="29"/>
+                    <segments>
+                        <segment title="Last Month"/>
+                        <segment title="Last Year"/>
+                    </segments>
+                </segmentedControl>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Afi-JH-YnZ">
+                    <rect key="frame" x="16" y="623" width="343" height="29"/>
+                    <segments>
+                        <segment title="Price"/>
+                        <segment title="Highest"/>
+                        <segment title="Lowest"/>
+                        <segment title="Open"/>
+                        <segment title="Close"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Afi-JH-YnZ" secondAttribute="bottom" constant="16" id="4pc-RO-DJJ"/>
+                <constraint firstItem="uhU-ef-hRk" firstAttribute="top" secondItem="z6v-2Z-mTh" secondAttribute="bottom" constant="64" id="6yV-qC-Gbw"/>
+                <constraint firstItem="GiW-RD-tT9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="8pa-MN-3Ku"/>
+                <constraint firstItem="uhU-ef-hRk" firstAttribute="top" secondItem="NA1-2b-1tP" secondAttribute="bottom" constant="32" id="AaO-H5-6r3"/>
+                <constraint firstItem="Afi-JH-YnZ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="HOV-HW-3tT"/>
+                <constraint firstItem="GiW-RD-tT9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Mag-3F-PNg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r1h-SP-naU" secondAttribute="trailing" constant="16" id="NwQ-aT-tCc"/>
+                <constraint firstItem="Afi-JH-YnZ" firstAttribute="leading" secondItem="z6v-2Z-mTh" secondAttribute="leading" id="VuA-Ca-dLX"/>
+                <constraint firstItem="NA1-2b-1tP" firstAttribute="trailing" secondItem="uhU-ef-hRk" secondAttribute="trailing" id="Wb8-Cb-rjV"/>
+                <constraint firstItem="Afi-JH-YnZ" firstAttribute="top" secondItem="uhU-ef-hRk" secondAttribute="bottom" constant="8" id="bvc-n7-1Bj"/>
+                <constraint firstItem="uhU-ef-hRk" firstAttribute="trailing" secondItem="Afi-JH-YnZ" secondAttribute="trailing" id="eFB-ei-QJ1"/>
+                <constraint firstItem="z6v-2Z-mTh" firstAttribute="top" secondItem="GiW-RD-tT9" secondAttribute="bottom" constant="16" id="fPi-hA-7tw"/>
+                <constraint firstItem="uhU-ef-hRk" firstAttribute="leading" secondItem="Afi-JH-YnZ" secondAttribute="leading" id="oLg-R6-E0L"/>
+                <constraint firstItem="z6v-2Z-mTh" firstAttribute="leading" secondItem="GiW-RD-tT9" secondAttribute="leading" id="uUa-VA-tii"/>
+                <constraint firstItem="r1h-SP-naU" firstAttribute="centerY" secondItem="GiW-RD-tT9" secondAttribute="centerY" id="uV0-Ld-sDs"/>
+                <constraint firstItem="r1h-SP-naU" firstAttribute="leading" secondItem="GiW-RD-tT9" secondAttribute="trailing" constant="16" id="vCV-wa-iOt"/>
+                <constraint firstItem="z6v-2Z-mTh" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="x0o-dD-fjs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

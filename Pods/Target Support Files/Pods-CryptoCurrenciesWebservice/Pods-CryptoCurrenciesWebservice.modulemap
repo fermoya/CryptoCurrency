@@ -1,0 +1,6 @@
+framework module Pods_CryptoCurrenciesWebservice {
+  umbrella header "Pods-CryptoCurrenciesWebservice-umbrella.h"
+
+  export *
+  module * { export * }
+}
